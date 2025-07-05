@@ -64,7 +64,7 @@ const TopProducts = () => {
                   <div className='p-4 text-center'>
                     {/* star rating */}
                     <div className='w-full flex items-center justify-center gap-1'>
-                      <FaStar className='text-yellow-500' />
+                      <FaStar className=' text-yellow-500' /> 
                       <FaStar className='text-yellow-500' />
                       <FaStar className='text-yellow-500' />
                       <FaStar className='text-yellow-500' />
