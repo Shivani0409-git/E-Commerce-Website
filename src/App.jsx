@@ -8,6 +8,8 @@ import TopProducts from './components/TopProducts/TopProducts';
 import Banner from './components/Banner/Banner';
 import Subscribe from './components/Subscribe/Subscribe';
 import Testimonial from './components/Testimonial/Testimonial';
+import Footer from './components/Footer/Footer';
+import Popup from './components/Popup/Popup';
 
 
 const App = () => {
@@ -23,8 +25,8 @@ const App = () => {
   },[]);
 
   return (
-    <div className="">
-      <Navbar />
+    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
+      <Navbar handleOrderPopup={handleOrderPopup}/>
       <Hero />
       <Products />
       <TopProducts />
@@ -32,6 +34,8 @@ const App = () => {
       <Subscribe />
       <Products />
       <Testimonial />
+      <Footer />
+      <Popup orderPopup={orderPopup} setorderPopup={setorderPopup}/>
     </div>
   )
 }
