@@ -35,7 +35,7 @@ const FooterLinks = [
       title:'Blog',
       link:'/#blog',
     },
-]
+];
     
 
 const Footer = () => {
@@ -63,20 +63,17 @@ const Footer = () => {
                   Important Links
                 </h1>
                 <ul 
-                className='flex flex-col gap-3'
-                >
-                      {
-                    FooterLinks.map((link)=>{
+                className='flex flex-col gap-3'>
+                  {FooterLinks.map((link)=>
                       <li 
                       className='cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-gray-200'
-                      key={link.title}>
-                        <span>{link.title}</span>
+                      key={link.title}
+                      >
+                        <span>{link.title}</span>  
                       </li>
-                    })
+                    )
                   }
-
-
-                </ul>
+                  </ul>
               </div>
             </div>
             <div>
@@ -84,15 +81,16 @@ const Footer = () => {
                 <h1 className='sm:text-xl text-xl font-bold sm:text-left text-justify mb-3'>
                   Links
                 </h1>
+                
                 <ul className='flex flex-col gap-3'>
                   {
-                    FooterLinks.map((link)=>{
+                    FooterLinks.map((link)=>
                       <li 
                       className='cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-gray-200'
                       key={link.title}>
                         <span>{link.title}</span> 
                       </li>
-                    })
+                    )
                   }
                 </ul>
               </div>

@@ -76,9 +76,8 @@ const Navbar = ({handleOrderPopup}) => {
                 </div>
             
                 {/* order button */}
-                <button onClick={()=>{
-                    handleOrderPopup();
-                }} className='bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group'>
+                <button onClick={()=>  handleOrderPopup()}
+                 className='bg-gradient-to-r from-primary to-secondary transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group'>
                     <span className='group-hover:block hidden transition-all duration-200'>Order</span> 
                     <FaCartShopping className='text-xl text-white drop-shadow-sm cursor-pointer'/>
                 </button>
@@ -89,8 +88,8 @@ const Navbar = ({handleOrderPopup}) => {
             </div> 
         </div>
       </div>
-      {/* Lower navbar */}
-      <div className='flex justify-center'>
+      {/* lower navbar */}
+      <div data-aos='zoom-in' className='flex justify-center'>
         <ul className='sm:flex hidden items-center gap-4'>
             {
                 Menu.map((data)=> (
